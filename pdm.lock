@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:4e477fcec5c6a42aa39bcf304ccace1a6432c16041823a05fc69638e3ae63d02"
+content_hash = "sha256:894ce7901d672c7d7fcc7bc0ffa0ea2cfab48ec2792da2e930d25b076798500d"
 
 [[metadata.targets]]
 requires_python = "~=3.8"
@@ -965,7 +965,7 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-fishing"
-version = "0.2.3"
+version = "0.2.4a1"
 requires_python = ">=3.8"
 summary = "你甚至可以电子钓鱼"
 groups = ["default"]
@@ -978,8 +978,8 @@ dependencies = [
     "sqlalchemy>=2.0.27",
 ]
 files = [
-    {file = "nonebot_plugin_fishing-0.2.3-py3-none-any.whl", hash = "sha256:6cf75d8d03055497798ddde387f7c9256767ac474be41e420be9a17d76db7bde"},
-    {file = "nonebot_plugin_fishing-0.2.3.tar.gz", hash = "sha256:b9eb17a15cbb1272e38fed497de8253d5e71ab46579d9c13487875d34e0fa298"},
+    {file = "nonebot_plugin_fishing-0.2.4a1-py3-none-any.whl", hash = "sha256:03a15a733829cd9be75715a9faa2a5bf44df82d18ce03d0d818b7e1eef267575"},
+    {file = "nonebot_plugin_fishing-0.2.4a1.tar.gz", hash = "sha256:9ed7f8bdb54e4d7c0b635fb04d44b000b0bb22642e61218220b7db189a5cbd7e"},
 ]
 
 [[package]]
