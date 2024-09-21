@@ -2,6 +2,11 @@ from nonebot.plugin import PluginMetadata
 from nonebot import on_command
 from nonebot.adapters import Event
 from nonebot.permission import SUPERUSER
+from nonebot import __version__
+
+HELP = f"""
+开源于 Github@ALittleBot/ALovelyBot
+Powered by Nonebot v{__version__}"""
 
 __plugin_meta__ = PluginMetadata(
     name="工具插件",
@@ -13,13 +18,19 @@ __plugin_meta__ = PluginMetadata(
 
 user_id = on_command("user_id")
 is_admin = on_command("is_admin", permission=SUPERUSER)
+help_cmd = on_command("help", aliases={"帮助"})
 
 
 @user_id.handle()
-async def _user_id(event: Event):
+async def _(event: Event):
     await user_id.finish(event.get_user_id())
 
 
 @is_admin.handle()
-async def _is_admin():
+async def _():
     await user_id.finish("Admin Yes!!!")
+
+
+@help_cmd.handle()
+async def _():
+    await user_id.finish(HELP)
