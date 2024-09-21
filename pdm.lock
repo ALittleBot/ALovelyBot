@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:9c264ccca60459c79ad609c6a0e79f36461cc134a8d19a23179d2f830929f305"
+content_hash = "sha256:555e493c4c86d62efcdc068e4f750b7f7181d58dd6ae735322f38e53dbdd5552"
 
 [[metadata.targets]]
 requires_python = "~=3.8"
@@ -996,6 +996,20 @@ dependencies = [
 files = [
     {file = "nonebot_plugin_localstore-0.6.0-py3-none-any.whl", hash = "sha256:59f0126d85680601166a9a62cca886a33e1b0a8fef7cd67fff52747bd47f42d3"},
     {file = "nonebot_plugin_localstore-0.6.0.tar.gz", hash = "sha256:7eb4039cb2e76c54b860b2b98f2b90cd25284919603e81dedec367f215662fcd"},
+]
+
+[[package]]
+name = "nonebot-plugin-logpile"
+version = "0.2.1"
+requires_python = ">=3.8"
+summary = "NoneBot2 local log files"
+groups = ["default"]
+dependencies = [
+    "nonebot2>=2.0.0rc4",
+]
+files = [
+    {file = "nonebot-plugin-logpile-0.2.1.tar.gz", hash = "sha256:f81069ba5045ba76d5184f101a6b49b94388ff2921cc70de937506bfc1c3188b"},
+    {file = "nonebot_plugin_logpile-0.2.1-py3-none-any.whl", hash = "sha256:1f6c169265b4fb38eb1098303b23d6e7986dc507ab9919f1dd4e0784ffca0ae0"},
 ]
 
 [[package]]
